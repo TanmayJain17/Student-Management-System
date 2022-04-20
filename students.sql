@@ -84,7 +84,7 @@ CREATE TABLE `student` (
 --
 -- Triggers `student`
 --
-/* DELIMITER $$
+DELIMITER $$
 CREATE TRIGGER `DELETE` BEFORE DELETE ON `student` FOR EACH ROW INSERT INTO trig VALUES(null,OLD.rollno,'STUDENT DELETED',NOW())
 $$
 DELIMITER ;
@@ -95,7 +95,7 @@ DELIMITER ;
 DELIMITER $$
 CREATE TRIGGER `UPDATE` AFTER UPDATE ON `student` FOR EACH ROW INSERT INTO trig VALUES(null,NEW.rollno,'STUDENT UPDATED',NOW())
 $$
-DELIMITER ; */
+DELIMITER ;
 
 -- --------------------------------------------------------
 

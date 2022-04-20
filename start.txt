@@ -1,0 +1,7 @@
+myenv\Scripts\activate
+python main.py
+pip install flask
+pip install Flask-SQLAlchemy
+pip install Flask-Mail
+pip install flask-login
+pip install mysqlclient
